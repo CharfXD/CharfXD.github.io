@@ -1,0 +1,167 @@
+/* Dark, gaming-inspired theme for CharfXD.github.io */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #2a0909;
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+.site-header {
+    background: #600000;
+    color: #ffcc00;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 0 #000, 0 0 8px #ff0000;
+}
+.main-nav {
+    display: flex;
+    gap: 2rem;
+}
+.main-nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.3em 0.7em;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+}
+.main-nav a.active, .main-nav a:hover {
+    background: #ffcc00;
+    color: #600000;
+}
+.nav-icon {
+    margin-right: 0.4em;
+    font-size: 1.2em;
+}
+
+.main-content {
+    max-width: 1100px;
+    margin: 2.5rem auto 0 auto;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+.intro-section {
+    background: #3a0d0d;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    padding: 2rem 2rem 1.5rem 2rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.intro-section h1 {
+    font-size: 2.5rem;
+    color: #ff3333;
+    margin-bottom: 0.3em;
+    text-shadow: 2px 2px 0 #000, 0 0 8px #ff0000;
+}
+.subtitle {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.discover-section h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 1.2rem;
+    text-shadow: 1px 1px 0 #000, 0 0 6px #ff0000;
+}
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.card {
+    background: #1a0505;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(255,0,0,0.12);
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    min-width: 260px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #600000;
+    position: relative;
+}
+.card h3 {
+    color: #ff3333;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 0 #000, 0 0 6px #ff0000;
+}
+.card p {
+    color: #f8fafc;
+    margin: 0.5em 0 1em 0;
+}
+.card-btn {
+    background: linear-gradient(90deg, #ff3333 0%, #ffcc00 100%);
+    color: #1a0505;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6em 1.5em;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    transition: background 0.2s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(255,0,0,0.10);
+}
+.card-btn:hover {
+    background: linear-gradient(90deg, #ffcc00 0%, #ff3333 100%);
+    color: #600000;
+    transform: translateY(-2px) scale(1.04);
+}
+.note {
+    font-size: 0.95em;
+    color: #ffcc00;
+    margin-top: 0.5em;
+}
+
+.site-footer {
+    text-align: center;
+    margin: 2.5rem 0 1rem 0;
+    color: #ffcc00;
+    font-size: 1.05em;
+    background: #600000;
+    padding: 1rem 0 0.5rem 0;
+    border-top: 2px solid #ff3333;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #ff3333;
+    text-decoration: underline;
+}
