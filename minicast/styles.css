@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin: 0; padding: 0; color: #222; background: #f6f7fb; }
+header { background: #111827; color: #fff; padding: 12px 20px; display:flex; align-items:center; justify-content:space-between; }
+header h1 { margin: 0; font-size: 1.2rem; }
+#auth-area input { margin-right: 6px; padding:6px; }
+
+main { padding: 16px; display: grid; grid-template-columns: 320px 1fr; gap: 16px; }
+#controls { }
+.panel { background: #fff; padding: 12px; border-radius:8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom:12px }
+#streams { display:flex; gap:12px; align-items:flex-start }
+#streams video { background:#000; width: 100%; max-width:640px; height:360px; border-radius:6px; }
+
+#live-panel { width:220px; }
+#live-list { background:#fff; padding:8px; border-radius:6px; min-height:60px }
+
+#chat { background:#fff; padding:12px; border-radius:8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); grid-column: span 2; }
+#messages { height:200px; overflow:auto; background:#f4f6fb; padding:8px; border-radius:6px; margin-bottom:8px }
+
+button { cursor:pointer; padding:8px 10px; border-radius:6px; border: none; background: #111827; color:#fff }
+input, select { padding:8px; border-radius:6px; border:1px solid #e6e9ef }
+
+footer { padding: 10px 16px; font-size:12px; color:#666 }
+
+.hidden { display:none }
