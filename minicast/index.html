@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MiniCast — Simple Twitch alternative (prototype)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MiniCast</h1>
+      <div id="auth-area">
+        <input id="email" type="email" placeholder="Email" />
+        <input id="password" type="password" placeholder="Password" />
+        <button id="signup">Sign up</button>
+        <button id="signin">Sign in</button>
+        <button id="signout" hidden>Sign out</button>
+        <span id="user-info" aria-live="polite"></span>
+        <div id="auth-error" role="alert" style="color:lightcoral"></div>
+      </div>
+    </header>
+
+    <main>
+      <section id="controls">
+        <div class="panel">
+          <h2>Broadcaster</h2>
+          <p>All streams and chat are public on the single shared "public-room" namespace. No ID required.</p>
+          <button id="start-broadcast">Start Broadcast</button>
+          <button id="stop-broadcast" disabled>Stop</button>
+        </div>
+
+        <div class="panel">
+          <h2>Viewer</h2>
+          <p>Open the page to view the public stream. No join required.</p>
+          <button id="join-room">Start Viewing</button>
+        </div>
+      </section>
+
+      <section id="streams">
+        <div>
+          <h3>Your camera (broadcaster)</h3>
+          <video id="localVideo" autoplay muted playsinline></video>
+        </div>
+        <div>
+          <h3>Remote stream (viewer)</h3>
+          <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+        <div class="panel" id="live-panel">
+          <h3>Live streamers</h3>
+          <div id="live-list">(no one live)</div>
+        </div>
+      </section>
+
+      <section id="chat">
+        <h2>Chat</h2>
+        <div id="messages"></div>
+        <input id="message-input" placeholder="Say something" />
+        <button id="send-message">Send</button>
+      </section>
+    </main>
+
+    <footer>
+      <small>Prototype — uses Firebase for signaling + realtime chat/storage.</small>
+    </footer>
+
+    <!-- Firebase SDKs (placeholders: replace with your config) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
